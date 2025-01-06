@@ -1,0 +1,65 @@
+/* CSSファイル - style.css */
+html {
+  overflow: hidden;
+}
+body {
+  overflow: hidden;
+}
+
+/* モバイル対応のスタイル */
+@media (max-width: 768px) {
+  .background {
+    padding: 20px;
+  }
+  #seekbar,
+  #volume {
+    width: 90%; /* スマホでシークバーが扱いやすいよう幅を調整 */
+  }
+}
+/* 背景全体のスタイル */
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 子要素を中央に配置 */
+  justify-content: center; /* 垂直方向の中央に配置 */
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* 画像のスタイル */
+.img {
+  display: grid;
+  margin-bottom: 20px;
+  object-fit: cover; /* 画像を枠に収める */
+
+  object-fit: cover;
+  margin-top: 20px; /* ページ上部との余白 */
+  text-align: center;
+}
+
+/* ボタンのスタイル */
+.play {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 再生中のテキスト */
+#playing {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* 残り時間 */
+#timeRemaining {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* シークバー */
+#seekbar,
+#volume {
+  margin-top: 10px;
+  width: 80%;
+}

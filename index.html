@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Audio Loader</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="img">
+        <img id="currentImage" width="300" src="static/images/initimg.png" />
+      </div>
+      <img
+        class="play"
+        width="50"
+        height="50"
+        src="static/icons/playicon.png"
+        onclick="randomplay(playlist)"
+        alt=""
+      />
+      <img
+        id="pause"
+        width="50"
+        height="50"
+        src="static/icons/pauseicon.png"
+        onclick="pause()"
+        alt=""
+      />
+      <p id="playing">【 再生中 】---</p>
+      <div id="timeRemaining">残り時間: 00:00</div>
+      <input id="seekbar" type="range" value="0" min="0" max="100" step="1" />
+      <input id="volume" type="range" value="1" min="0" max="1" step="0.01" />
+    </div>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
